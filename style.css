@@ -1,0 +1,2346 @@
+/* Basic styles for the entire page body */
+body {
+    font-family: "Times New Roman", Times, serif; /* Changed font */
+    background-color: #f1f1f1; /* A light grey background */
+    color: #333; /* Dark grey text color */
+    margin: 20px; /* Adds some space around the content */
+    text-align: center; /* Centers all text content */
+}
+
+/* Styles for the main heading */
+h1 {
+    color: #ffffff; /* A nice blue color for the heading */
+    font-size: 3em; /* Makes the heading larger */
+    margin-top: 50px; /* Adds space above the heading */
+}
+
+/* Styles for the subheading */
+h2 {
+    color: #007bff; /* A slightly lighter blue */
+    font-size: 1.8em; /* Slightly smaller than h1 */
+}
+
+/* Styles for paragraphs */
+p {
+    line-height: 1.6; /* Improves readability of text */
+    max-width: 800px; /* Limits paragraph width for better reading */
+    margin: 20px auto; /* Centers the paragraph and adds vertical space */
+}
+/* Styles for the header section */
+header {
+    background-color: #001aff; /* A darker blue for the header background */
+    color: #ffffff; /* White text for contrast */
+    padding: 20px 0; /* Adds space inside the header, top/bottom */
+    text-align: center; /* Centers content within the header */
+}
+
+/* Adjust heading styles within header (optional, but good for design) */
+header h1 {
+    margin-top: 0; /* Remove top margin for h1 inside header */
+    margin-bottom: 5px; /* Reduce space below h1 */
+}
+
+header h2 {
+    margin-top: 5px; /* Reduce space above h2 */
+    margin-bottom: 0; /* Remove bottom margin for h2 */
+}
+/* Styles for the footer section */
+footer {
+    background-color: #001aff; /* Dark grey background for the footer */
+    color: #f0f0f0; /* Light grey text for contrast */
+    padding: 20px 0; /* Adds space inside the footer */
+    text-align: center; /* Centers content within the footer */
+    margin-top: 50px; /* Adds space above the footer */
+}
+
+footer p {
+    margin: 2; /* Remove default margin from paragraph inside footer */
+    font-size: 0.9em; /* Make footer text slightly smaller */
+}
+/* Styles for the navigation bar */
+nav ul {
+    list-style: none; /* Removes bullet points from the list */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    display: flex; /* Arranges list items horizontally */
+    justify-content: center; /* Centers the navigation links */
+    gap: 20px; /* Adds space between the links */
+}
+
+nav ul li a {
+    color: #ffffff; /* Sets link color to white */
+    text-decoration: none; /* Removes the underline from links */
+    font-weight: bold; /* Makes the link text bold */
+    padding: 10px 15px; /* Adds padding around the link text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    border-radius: 5px; /* Slightly rounded corners for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #007bff; /* Changes background on hover */
+    color: #ffffff; /* Ensures text stays white on hover */
+}
+/* Styles for the Hero Section */
+.hero {
+    background-image: url('images/hero-banner.jpg'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    color: #ffffff; /* White text for readability over dark image */
+    text-align: center;
+    padding: 100px 20px; /* Top/bottom padding for vertical spacing */
+    display: flex; /* Use flexbox to center content vertically and horizontally */
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    min-height: 500px; /* Minimum height for the hero section */
+}
+
+.hero-content {
+    max-width: 800px; /* Limits the width of the text content */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for text */
+    padding: 30px;
+    border-radius: 8px; /* Slightly rounded corners for the content box */
+}
+
+.hero h1 {
+    font-size: 3.5em; /* Larger font size for the hero heading */
+    margin-bottom: 10px;
+    color: #ffffff; /* Ensure heading is white */
+}
+
+.hero p {
+    font-size: 1.2em; /* Slightly larger paragraph font size */
+    margin-bottom: 30px;
+    color: #f0f0f0; /* Lighter white for paragraph */
+}
+
+/* Styles for the button */
+.btn {
+    display: inline-block; /* Allows padding and margin */
+    background-color: #007bff; /* Blue button background */
+    color: #ffffff; /* White text on button */
+    text-decoration: none; /* Remove underline */
+    padding: 12px 25px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+/* Styles for the Services Section */
+.services {
+    padding: 60px 20px; /* Top/bottom padding for spacing */
+    background-color: #f9f9f9; /* A slightly different background for contrast */
+    text-align: center; /* Center the heading */
+}
+
+.services h2 {
+    color: #0056b3; /* Match primary blue heading color */
+    font-size: 2.5em; /* Make the heading prominent */
+    margin-bottom: 40px; /* Space below the heading */
+}
+
+.service-grid {
+    display: grid; /* Turns the container into a grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Creates responsive columns */
+    gap: 30px; /* Adds space between grid items */
+    max-width: 1200px; /* Limits the max width of the grid */
+    margin: 0 auto; /* Centers the grid on the page */
+}
+
+.service-item {
+    background-color: #ffffff; /* White background for each service box */
+    padding: 30px;
+    border-radius: 8px; /* Rounded corners for the boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: left; /* Align text left within each box */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* Lifts the box slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+.service-item h3 {
+    color: #007bff; /* Blue color for service titles */
+    font-size: 1.5em;
+    margin-top: 0; /* Remove default top margin */
+    margin-bottom: 10px; /* Space below title */
+}
+
+.service-item p {
+    color: #666; /* Slightly lighter text for descriptions */
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 0; /* Remove default paragraph margin */
+}
+/* Styles for the Call to Action Section */
+.cta-section {
+    background-color: #007bff; /* A vibrant blue background */
+    color: #ffffff; /* White text for contrast */
+    padding: 80px 20px; /* Generous top/bottom padding */
+    text-align: center;
+    margin-top: 50px; /* Space above the section */
+}
+
+.cta-section h2 {
+    font-size: 2.8em; /* Large, impactful heading */
+    margin-bottom: 20px;
+    color: #ffffff; /* Ensure heading is white */
+}
+
+.cta-section p {
+    font-size: 1.2em; /* Readable paragraph size */
+    max-width: 900px; /* Limit width for readability */
+    margin: 0 auto 30px auto; /* Center paragraph and add bottom margin */
+}
+
+/* Style the button specifically for this section if needed, or rely on .btn */
+.cta-section .btn {
+    background-color: #ffffff; /* White background for the button */
+    color: #007bff; /* Blue text for contrast */
+    border: 2px solid #ffffff; /* White border */
+}
+
+.cta-section .btn:hover {
+    background-color: #f0f0f0; /* Slightly off-white on hover */
+    color: #0056b3; /* Darker blue text on hover */
+    border-color: #f0f0f0; /* Border color change on hover */
+}
+/* --- Media Queries for Responsiveness --- */
+
+@media (max-width: 768px) {
+    /* Adjust header and hero for smaller screens */
+    header h1 {
+        font-size: 2.2em; /* Smaller font for main heading */
+    }
+
+    header h2 {
+        font-size: 1.2em; /* Smaller font for subheading */
+    }
+
+    .hero {
+        padding: 80px 15px; /* Reduce padding on hero section */
+        min-height: 400px; /* Reduce min height */
+    }
+
+    .hero h1 {
+        font-size: 2.5em; /* Smaller hero heading */
+    }
+
+    .hero p {
+        font-size: 1em; /* Smaller hero paragraph */
+    }
+
+    /* Adjust navigation for smaller screens */
+    nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 10px; /* Reduce gap between stacked links */
+        padding-top: 15px; /* Add some space above stacked links */
+    }
+
+    nav ul li a {
+        padding: 8px 15px; /* Adjust padding for smaller buttons */
+        width: 80%; /* Make buttons wider for easier tapping */
+        margin: 0 auto; /* Center buttons */
+    }
+
+    /* Adjust services grid for smaller screens */
+    .service-grid {
+        grid-template-columns: 1fr; /* Stack service items in a single column */
+        max-width: 400px; /* Limit width of stacked items */
+    }
+
+    .service-item {
+        padding: 20px; /* Reduce padding in service items */
+    }
+
+    /* Adjust CTA section for smaller screens */
+    .cta-section {
+        padding: 50px 15px; /* Reduce padding on CTA section */
+    }
+
+    .cta-section h2 {
+        font-size: 2em; /* Smaller CTA heading */
+    }
+
+    .cta-section p {
+        font-size: 1em; /* Smaller CTA paragraph */
+    }
+}
+/* Styles for the About Us content */
+.about-content {
+    padding: 60px 20px; /* Top/bottom padding for spacing */
+    max-width: 900px; /* Limit content width for readability */
+    margin: 40px auto; /* Center the content and add vertical space */
+    text-align: left; /* Align text normally (left) */
+    background-color: #ffffff; /* White background for the content block */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+.about-content h2 {
+    color: #067fff; /* Match primary blue heading color */
+    font-size: 2.2em; /* Appropriate heading size */
+    margin-bottom: 25px; /* Space below heading */
+    text-align: center; /* Center the specific h2 on this page */
+}
+
+.about-content p {
+    color: #333; /* Darker text for readability */
+    font-size: 1.1em; /* Slightly larger text for main content */
+    line-height: 1.8; /* Improved line spacing for readability */
+    margin-bottom: 20px; /* Space between paragraphs */
+}
+
+/* Basic responsiveness for about content on smaller screens */
+@media (max-width: 768px) {
+    .about-content {
+        padding: 30px 15px; /* Reduce padding on smaller screens */
+        margin: 20px auto; /* Adjust margin */
+    }
+
+    .about-content h2 {
+        font-size: 1.8em; /* Smaller heading */
+    }
+
+    .about-content p {
+        font-size: 1em; /* Smaller paragraph text */
+    }
+}
+/* Styles for the main content area of the Services Page */
+.services-page-content {
+    padding: 60px 20px; /* Generous padding around the content */
+    max-width: 1000px; /* Limit overall content width */
+    margin: 40px auto; /* Center the content */
+    background-color: #ffffff; /* White background for the content block */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+.services-page-content h2 {
+    color: #0056b3; /* Primary blue heading */
+    font-size: 2.5em; /* Prominent heading size */
+    margin-bottom: 25px; /* Space below heading */
+    text-align: center; /* Center the main heading */
+}
+
+.services-page-content .intro-paragraph {
+    text-align: center; /* Center the introductory text */
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 40px; /* Space below the intro */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Styles for the grid of detailed service items */
+.service-detail-grid {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive 3-column layout */
+    gap: 30px; /* Space between items */
+}
+
+.service-detail-item {
+    border: 1px solid #ddd; /* Light border around each item */
+    border-radius: 8px; /* Rounded corners */
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    text-align: left; /* Ensure text aligns left within the box */
+}
+
+.service-detail-item:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* More prominent shadow on hover */
+}
+
+.service-detail-item h3 {
+    color: #007bff; /* Blue for service titles */
+    font-size: 1.6em;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.service-detail-item p {
+    color: #444; /* Darker text for main descriptions */
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.service-detail-item ul {
+    list-style: disc; /* Use standard bullet points */
+    margin-left: 20px; /* Indent the list */
+    padding: 0;
+    color: #444;
+}
+
+.service-detail-item ul li {
+    margin-bottom: 8px; /* Space between list items */
+    font-size: 0.95em;
+}
+
+/* Basic responsiveness for services page content on smaller screens */
+@media (max-width: 768px) {
+    .services-page-content {
+        padding: 30px 15px;
+        margin: 20px auto;
+    }
+
+    .services-page-content h2 {
+        font-size: 2em;
+    }
+
+    .services-page-content .intro-paragraph {
+        font-size: 1em;
+    }
+
+    .service-detail-grid {
+        grid-template-columns: 1fr; /* Stack items in a single column */
+        max-width: 400px; /* Limit width for stacked items */
+    }
+}
+/* Scroll-to-Top Button Styles */
+#scrollToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position on the screen */
+    bottom: 30px; /* 30px from the bottom */
+    right: 30px; /* 30px from the right */
+    z-index: 99; /* Ensure it's on top of other elements */
+    font-size: 24px; /* Larger icon */
+    border: none; /* No border */
+    outline: none; /* No outline */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text/icon */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    padding: 10px 15px; /* Padding inside the button */
+    border-radius: 50%; /* Makes it a circle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+#scrollToTopBtn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+/* Basic styles for the entire page body */
+body {
+    font-family: 'Open Sans', sans-serif; /* Your new body font */
+    background-color: #001aff;
+    color: #333;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Styles for the main heading */
+h1, h2, h3 { /* Apply to all headings */
+    font-family: 'Poppins', sans-serif; /* Your new heading font */
+    color: #ffffff;
+    /* ... rest of heading styles ... */
+}
+
+/* You might need to adjust other places where you set font-family specifically,
+   e.g., in .about-content p, .service-item p, etc. */
+.about-content p,
+.service-item p,
+.contact-content p {
+    font-family: 'Open Sans', sans-serif; /* Ensure paragraphs use the body font */
+    /* ... rest of paragraph styles ... */
+}
+/* Existing Hero Content Styles (locate this) */
+.hero-content {
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 8px;
+    /* Add these two lines for animation */
+    animation: fadeIn 1s ease-out forwards; /* Apply fadeIn animation */
+    animation-delay: 0.5s; /* Delay start by 0.5 seconds */
+}
+
+/* Existing Services Section Styles (locate this) */
+.services {
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    /* Add these two lines for animation */
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.8s;
+}
+
+/* Existing About Us Content Styles (locate this) */
+.about-content {
+    padding: 60px 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: left;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    /* Add these two lines for animation */
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+/* Existing Services Page Content Styles (locate this) */
+.services-page-content {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    /* Add these two lines for animation */
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+/* Existing Call to Action Section Styles (locate this) */
+.cta-section {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: 50px;
+    /* Add these two lines for animation */
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 1.0s;
+}
+/* Styles for the contact form container */
+.contact-form-container {
+    max-width: 600px; /* Limit the overall width of the form for better readability */
+    margin: 50px auto; /* Center the form container and add vertical spacing */
+    padding: 40px;
+    background-color: #f8f8f8; /* Light background for the form area */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* More prominent shadow */
+}
+
+.contact-form-container h3 {
+    text-align: center;
+    color: #0056b3;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Styles for each form group (label + input/textarea) */
+.form-group {
+    margin-bottom: 20px; /* Space between each form field */
+}
+
+.form-group label {
+    display: block; /* Makes the label take its own line */
+    margin-bottom: 8px; /* Space between label and input */
+    font-weight: bold;
+    color: #333;
+    text-align: left; /* Ensure label text is left-aligned */
+}
+
+/* Styles for all input fields and the textarea */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"], /* In case you add a phone field later */
+.form-group input[type="subject"], /* If you make subject a specific type */
+.form-group textarea {
+    width: 100%; /* Make them take full width of their container */
+    padding: 12px; /* Inner space */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Slightly rounded corners */
+    box-sizing: border-box; /* Include padding and border in the element's total width/height */
+    font-size: 1em; /* Readable font size */
+    font-family: 'Open Sans', sans-serif; /* Ensure consistent font */
+}
+
+/* Specific styles for the textarea (message box) */
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing by user, but not horizontal */
+    min-height: 120px; /* Set a minimum height for the message box */
+}
+
+/* Style the submit button within the form */
+.contact-form-container .btn {
+    width: auto; /* Allow the button to size based on its content */
+    display: block; /* Make it take its own line */
+    margin: 30px auto 0 auto; /* Center the button below the form fields */
+    padding: 15px 30px; /* More padding for a substantial button */
+    background-color: #007bff; /* Primary blue button */
+    color: #ffffff; /* White text */
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form-container .btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Adjust contact info section */
+.contact-info {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+
+/* Responsive adjustments for contact page on smaller screens */
+@media (max-width: 768px) {
+    .contact-content {
+        padding: 30px 15px;
+        margin: 20px auto;
+    }
+
+    .contact-form-container {
+        padding: 25px; /* Reduce form padding */
+        margin: 30px auto; /* Adjust margin */
+    }
+}
+/* Styles for all input fields and the textarea (locate this in your style.css) */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="subject"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* THIS IS THE PROPERTY YOU'RE ASKING ABOUT */
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+}
+/* Styles for the Testimonials Section */
+.testimonials {
+    padding: 80px 20px; /* Generous padding */
+    background-color: #e6f7ff; /* A very light blue background for emphasis */
+    text-align: center;
+    margin-top: 50px; /* Space above the section */
+    animation: fadeIn 1s ease-out forwards; /* Apply animation from previous step */
+    animation-delay: 1.2s; /* Slightly delayed animation */
+}
+
+.testimonials h2 {
+    color: #0056b3; /* Primary blue heading */
+    font-size: 2.5em;
+    margin-bottom: 50px; /* More space below heading */
+}
+
+.testimonial-grid {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive 3-column layout */
+    gap: 30px; /* Space between items */
+    max-width: 1200px; /* Limit max width for readability */
+    margin: 0 auto; /* Center the grid */
+}
+
+.testimonial-item {
+    background-color: #ffffff; /* White background for each testimonial box */
+    padding: 30px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center text within each box */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    display: flex; /* Use flexbox to align content vertically */
+    flex-direction: column; /* Stack quote and name vertically */
+    justify-content: space-between; /* Push name to bottom, if items have varying heights */
+}
+
+.testimonial-item:hover {
+    transform: translateY(-8px); /* Lifts the box slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More prominent shadow on hover */
+}
+
+.testimonial-item .quote {
+    font-size: 1.15em;
+    line-height: 1.6;
+    color: #444;
+    font-style: italic; /* Italicize the quote */
+    margin-bottom: 20px; /* Space between quote and name */
+}
+
+.testimonial-item .client-name {
+    font-size: 1em;
+    font-weight: bold;
+    color: #007bff; /* Blue for client names */
+    margin-top: auto; /* Pushes the name to the bottom if the quote is short */
+}
+
+/* Responsive adjustments for testimonials on smaller screens */
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 50px 15px; /* Reduce padding */
+    }
+
+    .testimonials h2 {
+        font-size: 2em; /* Smaller heading */
+        margin-bottom: 30px;
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr; /* Stack testimonials in a single column */
+        max-width: 400px; /* Limit width of stacked items */
+    }
+
+    .testimonial-item {
+        padding: 25px; /* Reduce padding */
+    }
+
+    .testimonial-item .quote {
+        font-size: 1em;
+    }
+}
+/* --- FAQ Section Styles --- */
+.faq-section {
+    padding: 80px 20px;
+    background-color: #f8f8f8; /* Light background for the section */
+    text-align: center;
+    margin-top: 50px;
+    animation: fadeIn 1s ease-out forwards; /* Apply fade-in animation */
+    animation-delay: 1.8s; /* Staggered animation */
+}
+
+.faq-section h2 {
+    color: #0056b3;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto; /* Center the container */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.faq-item {
+    border-bottom: 1px solid #eee; /* Separator between FAQ items */
+    text-align: left; /* Align text to the left */
+}
+
+.faq-item:last-child {
+    border-bottom: none; /* No border for the last item */
+}
+
+.faq-question {
+    width: 100%; /* Make the button fill the width */
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px 25px;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    outline: none; /* Remove outline on focus */
+    display: flex; /* Use flexbox to align heading and icon */
+    justify-content: space-between; /* Push icon to the right */
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #f2f2f2; /* Light hover effect */
+}
+
+.faq-question h3 {
+    margin: 0; /* Remove default margin from h3 inside button */
+    font-size: 1.2em; /* Ensure font size consistency */
+    color: #007bff; /* Blue for question text */
+    flex-grow: 1; /* Allow text to take available space */
+    padding-right: 15px; /* Space between text and icon */
+}
+
+.faq-toggle-icon {
+    font-size: 0.8em; /* Smaller icon size */
+    transition: transform 0.3s ease; /* Smooth rotation for icon */
+    color: #666;
+}
+
+/* Style for when an FAQ item is active (open) */
+.faq-item.active .faq-question {
+    background-color: #eaf6ff; /* Lighter blue for active question */
+}
+
+.faq-item.active .faq-toggle-icon {
+    transform: rotate(180deg); /* Rotate icon when active */
+}
+
+.faq-answer {
+    background-color: #fdfdfd;
+    padding: 0 25px; /* Padding for the answer content */
+    max-height: 0; /* Crucial: Hides the answer by default */
+    overflow: hidden; /* Hides content that exceeds max-height */
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out; /* Smooth transition for height */
+}
+
+.faq-answer p {
+    padding-bottom: 20px; /* Space below the answer text */
+    margin-top: 0; /* Remove top margin */
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Adjust padding for contact page link in FAQ if needed */
+.faq-answer p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.faq-answer p a:hover {
+    text-decoration: underline;
+}
+
+
+/* Responsive adjustments for FAQ on smaller screens */
+@media (max-width: 768px) {
+    .faq-section {
+        padding: 50px 15px;
+    }
+
+    .faq-section h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .faq-container {
+        margin: 0 10px; /* Smaller side margins */
+    }
+
+    .faq-question {
+        padding: 15px 20px;
+        font-size: 1em;
+    }
+
+    .faq-question h3 {
+        font-size: 1.1em;
+    }
+
+    .faq-answer {
+        padding: 0 20px;
+    }
+
+    .faq-answer p {
+        padding-bottom: 15px;
+    }
+}
+/* --- Scroll Down Indicator Styles --- */
+.scroll-down-indicator {
+    position: absolute; /* Position relative to the hero section */
+    bottom: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5; /* Ensure it's above other content but below header */
+    animation: bounce 2s infinite; /* Add a subtle bounce animation */
+}
+
+.scroll-down-indicator a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff; /* White arrow */
+}
+
+.scroll-down-indicator .arrow-down {
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 15px solid #ffffff; /* Creates the arrow shape */
+    opacity: 0.8;
+}
+
+/* Bounce animation for the scroll indicator */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0) translateX(-50%);
+    }
+    40% {
+        transform: translateY(-10px) translateX(-50%);
+    }
+    60% {
+        transform: translateY(-5px) translateX(-50%);
+    }
+}
+
+/* Optional: Hide on very small screens if it obstructs content */
+@media (max-width: 480px) {
+    .scroll-down-indicator {
+        display: none;
+    }
+}
+/* --- Contact Form Section Styles (contact.html) --- */
+.contact-form-section {
+    padding: 80px 20px;
+    background-color: #0010f5; /* Light background for the section */
+    text-align: center;
+    margin-top: 50px;
+    animation: fadeIn 1s ease-out forwards; /* Apply fade-in animation */
+    animation-delay: 0.2s; /* Start animation soon after load */
+}
+
+.contact-form-section h2 {
+    color: #0056b3;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-intro {
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #0026ff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left; /* Align form elements to the left */
+    margin-bottom: 50px; /* Space before contact info */
+}
+
+.form-group {
+    margin-bottom: 25px; /* Space between form fields */
+}
+
+.form-group label {
+    display: block; /* Make label appear on its own line */
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif; /* Consistent font */
+    box-sizing: border-box; /* Include padding/border in element's total width/height */
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: #007bff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2); /* Subtle glow on focus */
+}
+
+.form-group textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 120px; /* Minimum height for textarea */
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: block; /* Make button take full width if desired */
+    width: 100%; /* Or 'max-content' if you want it to shrink to text size */
+    max-width: 250px; /* Limit button width if it's full width */
+    margin: 0 auto; /* Center the button if max-width is set */
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+/* Contact Info Section */
+.contact-info {
+    background-color: #0080ff; /* Slightly darker background for info */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+    margin-top: 30px; /* Space between form and info */
+}
+
+.contact-info h3 {
+    color: #0056b3;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 15px;
+    display: flex; /* For aligning icon and text */
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+}
+
+.contact-info p i {
+    margin-right: 15px; /* Space between icon and text */
+    color: #007bff;
+    font-size: 1.2em; /* Size for icons */
+}
+
+/* Responsive adjustments for Contact Form on smaller screens */
+@media (max-width: 768px) {
+    .contact-form-section {
+        padding: 50px 15px;
+    }
+
+    .contact-form-section h2 {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+
+    .contact-intro {
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        font-size: 1em;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 0.95em;
+    }
+
+    .submit-btn {
+        padding: 12px 25px;
+        font-size: 1.1em;
+    }
+
+    .contact-info {
+        padding: 20px;
+    }
+
+    .contact-info h3 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .contact-info p {
+        font-size: 1em;
+        margin-bottom: 10px;
+        flex-direction: column; /* Stack icon and text on small screens */
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-info p i {
+        margin-right: 0;
+        margin-bottom: 5px; /* Space when stacked */
+    }
+}
+/* Contact Info Section */
+.contact-info {
+    background-color: #0080ff; /* Slightly darker background for info */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+    margin-top: 30px; /* Space between form and info */
+}
+
+.contact-info h3 {
+    color: #0056b3;
+    font-size: 1.8em;
+    margin-bottom: 25px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    color: #444;
+    margin-bottom: 15px;
+    display: flex; /* For aligning icon and text */
+    align-items: center;
+    justify-content: center; /* Center content horizontally */
+}
+
+.contact-info p i {
+    margin-right: 15px; /* Space between icon and text */
+    color: #007bff;
+    font-size: 1.2em; /* Size for icons */
+}
+
+/* Responsive adjustments for Contact Info on smaller screens (from media query) */
+@media (max-width: 768px) {
+    .contact-info {
+        padding: 20px;
+    }
+
+    .contact-info h3 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .contact-info p {
+        font-size: 1em;
+        margin-bottom: 10px;
+        flex-direction: column; /* Stack icon and text on small screens */
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-info p i {
+        margin-right: 0;
+        margin-bottom: 5px; /* Space when stacked */
+    }
+}
+/* --- About Us Page Styles (about.html) --- */
+
+/* About Hero Section */
+.about-hero {
+    background: linear-gradient(#007bff, rgba(0, 86, 179, 0.8)), url('https://via.placeholder.com/1500x500') no-repeat center center/cover; /* Placeholder background, you can replace with a real image later */
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* For any internal elements */
+    margin-top: 60px; /* To account for fixed header */
+    animation: fadeIn 1s ease-out forwards; /* Apply fade-in animation */
+    animation-delay: 0.2s;
+}
+
+.about-hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.about-hero p {
+    font-size: 1.3em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Mission & Vision Section */
+.mission-vision {
+    padding: 60px 20px;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.mv-item {
+    flex: 1; /* Allows items to grow and shrink */
+    min-width: 300px; /* Minimum width before wrapping */
+    max-width: 45%; /* Max width for two columns */
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.mv-item:hover {
+    transform: translateY(-5px);
+}
+
+.mv-item h3 {
+    color: #007bff;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.mv-item p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Our Story Section */
+.our-story {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.our-story h2 {
+    color: #0056b3;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.our-story p {
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Our Values Section */
+.our-values {
+    padding: 80px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.our-values h2 {
+    color: #0056b3;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value-item {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.value-item h4 {
+    color: #007bff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.value-item p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Call to Action (CTA) on About Us Page */
+.cta-about-us {
+    background-color: #0056b3; /* Darker blue background */
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cta-about-us h2 {
+    color: white;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.cta-about-us p {
+    font-size: 1.3em;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+.cta-about-us .btn {
+    background-color: #ffffff; /* White button */
+    color: #007bff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    display: inline-block; /* Allows padding and transitions */
+}
+
+.cta-about-us .btn:hover {
+    background-color: #e0e0e0;
+    color: #0056b3;
+    transform: translateY(-2px);
+}
+
+
+/* --- Responsive Adjustments for About Us Page --- */
+@media (max-width: 1024px) {
+    .about-hero h1 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-hero {
+        padding: 80px 15px;
+        margin-top: 50px; /* Adjust for smaller fixed header */
+    }
+
+    .about-hero h1 {
+        font-size: 2.5em;
+    }
+
+    .about-hero p {
+        font-size: 1.1em;
+    }
+
+    .mission-vision {
+        padding: 40px 15px;
+        gap: 30px;
+    }
+
+    .mv-item {
+        min-width: 100%; /* Stack items on small screens */
+        max-width: 100%;
+        padding: 25px;
+    }
+
+    .mv-item h3 {
+        font-size: 1.8em;
+    }
+
+    .our-story {
+        padding: 50px 15px;
+    }
+
+    .our-story h2 {
+        font-size: 2em;
+        margin-bottom: 25px;
+    }
+
+    .our-story p {
+        font-size: 1em;
+    }
+
+    .our-values {
+        padding: 50px 15px;
+    }
+
+    .our-values h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
+
+    .value-item {
+        padding: 25px;
+    }
+
+    .value-item h4 {
+        font-size: 1.3em;
+    }
+
+    .cta-about-us {
+        padding: 50px 15px;
+    }
+
+    .cta-about-us h2 {
+        font-size: 2em;
+    }
+
+    .cta-about-us p {
+        font-size: 1.1em;
+    }
+
+    .cta-about-us .btn {
+        padding: 12px 25px;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero h1 {
+        font-size: 2em;
+    }
+    .mv-item h3 {
+        font-size: 1.5em;
+    }
+    .our-story h2, .our-values h2, .cta-about-us h2 {
+        font-size: 1.8em;
+    }
+}
+/* --- Services Page Styles (services.html) --- */
+
+/* Services Hero Section */
+.services-hero {
+    background: linear-gradient(rgba(0, 86, 179, 0.8), rgba(0, 86, 179, 0.8)), url('https://via.placeholder.com/1500x500/007bff/ffffff?text=Services+Hero') no-repeat center center/cover; /* Placeholder background */
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    margin-top: 60px; /* To account for fixed header */
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+.services-hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.services-hero p {
+    font-size: 1.3em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Service Categories Section */
+.service-categories {
+    padding: 80px 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.service-categories h2 {
+    color: #0056b3;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid for services */
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    background-color: #f8f8f8; /* Light background for each service item */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left; /* Align content left within item */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-item i {
+    font-size: 3em; /* Icon size */
+    color: #007bff;
+    margin-bottom: 20px;
+    display: block; /* Ensures icon is on its own line */
+    text-align: center; /* Center icon */
+}
+
+.service-item h3 {
+    color: #0056b3;
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center; /* Center heading */
+}
+
+.service-item p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.service-item ul {
+    list-style: none; /* Remove default list style */
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.service-item ul li {
+    color: #444;
+    margin-bottom: 10px;
+    padding-left: 25px; /* Space for custom bullet */
+    position: relative;
+    font-size: 0.95em;
+}
+
+.service-item ul li:before {
+    content: '\2022'; /* Unicode for a bullet point */
+    color: #007bff; /* Blue bullet */
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.btn-small {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block; /* Allows padding and transitions */
+    margin-top: 15px; /* Space from list/paragraph */
+    text-align: center; /* Center the button within the item */
+    width: 100%; /* Make button fill item width */
+    max-width: 200px; /* Limit button width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-small:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+
+/* Our Process Section */
+.process-section {
+    padding: 80px 20px;
+    background-color: #e9ecef; /* Light gray background */
+    text-align: center;
+}
+
+.process-section h2 {
+    color: #0056b3;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.process-steps {
+    display: flex; /* Use flexbox for horizontal layout */
+    flex-wrap: wrap; /* Allow steps to wrap on smaller screens */
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.step-item {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    flex: 1; /* Allow items to grow and shrink */
+    min-width: 220px; /* Minimum width before wrapping */
+    max-width: 280px; /* Max width for consistent sizing */
+    position: relative; /* For the number positioning */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.step-number {
+    background-color: #007bff;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Make it a circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin: -55px auto 25px auto; /* Position it above the box and center */
+    border: 4px solid #e9ecef; /* Border matches section background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.step-item h3 {
+    color: #0056b3;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.step-item p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Call to Action (CTA) on Services Page */
+.cta-services {
+    background-color: #0056b3; /* Darker blue background */
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.cta-services h2 {
+    color: white;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.cta-services p {
+    font-size: 1.3em;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+.cta-services .btn {
+    background-color: #ffffff; /* White button */
+    color: #007bff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.cta-services .btn:hover {
+    background-color: #e0e0e0;
+    color: #0056b3;
+    transform: translateY(-2px);
+}
+
+
+/* --- Responsive Adjustments for Services Page --- */
+@media (max-width: 1024px) {
+    .services-hero h1 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-hero {
+        padding: 80px 15px;
+        margin-top: 50px;
+    }
+
+    .services-hero h1 {
+        font-size: 2.5em;
+    }
+
+    .services-hero p {
+        font-size: 1.1em;
+    }
+
+    .service-categories {
+        padding: 50px 15px;
+    }
+
+    .service-categories h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr; /* Stack services on small screens */
+    }
+
+    .service-item {
+        padding: 25px;
+    }
+
+    .service-item h3 {
+        font-size: 1.8em;
+    }
+
+    .process-section {
+        padding: 50px 15px;
+    }
+
+    .process-section h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .process-steps {
+        flex-direction: column; /* Stack steps vertically on small screens */
+        align-items: center;
+    }
+
+    .step-item {
+        min-width: 100%;
+        max-width: 300px; /* Constrain width of stacked items */
+        padding-top: 50px; /* Adjust padding for stacked number */
+    }
+
+    .step-number {
+        margin-top: -30px; /* Adjust margin for stacked number */
+    }
+
+    .cta-services {
+        padding: 50px 15px;
+    }
+
+    .cta-services h2 {
+        font-size: 2em;
+    }
+
+    .cta-services p {
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .services-hero h1 {
+        font-size: 2em;
+    }
+    .service-item h3 {
+        font-size: 1.5em;
+    }
+    .process-section h2, .cta-services h2 {
+        font-size: 1.8em;
+    }
+    .btn-small {
+        font-size: 0.85em;
+        padding: 8px 15px;
+    }
+}
+/* --- Portfolio Page Styles (portfolio.html) --- */
+
+/* Portfolio Hero Section */
+.portfolio-hero {
+    background: linear-gradient(rgba(0, 86, 179, 0.8), rgba(0, 86, 179, 0.8)), url('https://via.placeholder.com/1500x500/007bff/ffffff?text=Portfolio+Hero') no-repeat center center/cover; /* Placeholder background */
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    margin-top: 60px; /* To account for fixed header */
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.2s;
+}
+
+.portfolio-hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.portfolio-hero p {
+    font-size: 1.3em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Projects Grid Section */
+.projects-grid-section {
+    padding: 80px 20px;
+    background-color: #f8f8f8; /* Light background for the section */
+    text-align: center;
+}
+
+.projects-grid-section h2 {
+    color: #0056b3;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.projects-grid-section .section-description {
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Responsive grid for projects */
+    gap: 40px; /* Space between grid items */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-item {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures image corners are rounded */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-8px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.project-item img {
+    width: 100%;
+    height: 250px; /* Fixed height for project images */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    display: block; /* Removes extra space below image */
+    border-bottom: 1px solid #eee;
+}
+
+.project-item h3 {
+    color: #0056b3;
+    font-size: 1.8em;
+    padding: 20px 20px 10px 20px;
+    margin: 0;
+}
+
+.project-item p {
+    color: #666;
+    padding: 0 20px 20px 20px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.project-item .view-project-btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px;
+    margin: 0 20px 20px 20px; /* Space from bottom of item */
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.project-item .view-project-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Call to Action (CTA) on Portfolio Page */
+.cta-portfolio {
+    background-color: #0056b3; /* Darker blue background */
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+    margin-top: 60px; /* Space above CTA */
+    border-radius: 8px; /* Match other sections */
+}
+
+.cta-portfolio h2 {
+    color: white;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.cta-portfolio p {
+    font-size: 1.3em;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+.cta-portfolio .btn {
+    background-color: #ffffff; /* White button */
+    color: #007bff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+}
+
+.cta-portfolio .btn:hover {
+    background-color: #e0e0e0;
+    color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* --- Responsive Adjustments for Portfolio Page --- */
+@media (max-width: 1024px) {
+    .portfolio-hero h1 {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 768px) {
+    .portfolio-hero {
+        padding: 80px 15px;
+        margin-top: 50px;
+    }
+
+    .portfolio-hero h1 {
+        font-size: 2.5em;
+    }
+
+    .portfolio-hero p {
+        font-size: 1.1em;
+    }
+
+    .projects-grid-section {
+        padding: 50px 15px;
+    }
+
+    .projects-grid-section h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+
+    .projects-grid-section .section-description {
+        font-size: 1em;
+        margin-bottom: 30px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack projects on small screens */
+        gap: 30px;
+    }
+
+    .project-item img {
+        height: 200px; /* Slightly smaller image height on mobile */
+    }
+
+    .project-item h3 {
+        font-size: 1.6em;
+        padding: 15px;
+    }
+
+    .project-item p {
+        padding: 0 15px 15px 15px;
+    }
+
+    .project-item .view-project-btn {
+        padding: 10px 20px;
+        font-size: 0.9em;
+        margin: 0 15px 15px 15px;
+    }
+
+    .cta-portfolio {
+        padding: 50px 15px;
+        margin-top: 40px;
+    }
+
+    .cta-portfolio h2 {
+        font-size: 2em;
+    }
+
+    .cta-portfolio p {
+        font-size: 1.1em;
+    }
+
+    .cta-portfolio .btn {
+        padding: 12px 25px;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-hero h1 {
+        font-size: 2em;
+    }
+    .projects-grid-section h2, .cta-portfolio h2 {
+        font-size: 1.8em;
+    }
+}
+/* --- Testimonials Section Styles (index.html) --- */
+
+.testimonials-section {
+    background-color: #e9ecef; /* Light gray background */
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    color: #0056b3;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid for testimonials */
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto 50px auto; /* Space below grid before CTA */
+}
+
+.testimonial-item {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item .quote {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    font-style: italic; /* Emphasize the quote */
+}
+
+.testimonial-item .quote:before {
+    content: '"'; /* Opening quote mark */
+    font-size: 2em;
+    color: #007bff;
+    position: relative;
+    top: 10px;
+    left: -5px;
+}
+
+.testimonial-item .quote:after {
+    content: '"'; /* Closing quote mark */
+    font-size: 2em;
+    color: #007bff;
+    position: relative;
+    bottom: -10px;
+    right: -5px;
+}
+
+.testimonial-item .client-name {
+    font-size: 1em;
+    color: #007bff;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.testimonials-cta {
+    /* Inherits .btn styles, add any specific overrides here if needed */
+    margin-top: 20px; /* Space from testimonials grid */
+}
+
+
+/* --- Responsive Adjustments for Testimonials Section --- */
+@media (max-width: 768px) {
+    .testimonials-section {
+        padding: 50px 15px;
+    }
+
+    .testimonials-section h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr; /* Stack testimonials on small screens */
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .testimonial-item {
+        padding: 25px;
+    }
+
+    .testimonial-item .quote {
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+
+    .testimonial-item .quote:before,
+    .testimonial-item .quote:after {
+        font-size: 1.8em;
+        top: 5px;
+        bottom: -5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonials-section h2 {
+        font-size: 1.8em;
+    }
+}
+/* --- Back to Top Button Styles --- */
+#back-to-top {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 30px; /* 30px from the bottom */
+    right: 30px; /* 30px from the right */
+    z-index: 99; /* Ensure it's above other content but below header */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Make it circular */
+    font-size: 1.5em; /* Icon size */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+#back-to-top:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-3px); /* Slight lift */
+}
+
+/* Responsive adjustments for button position */
+@media (max-width: 768px) {
+    #back-to-top {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px;
+        font-size: 1.2em;
+    }
+}
+/* Styling for your NUR-IEL Tech Logo with a white border */
+.site-logo {
+    max-width: 150px; /* Adjust this to your desired size (e.g., 100px, 200px) */
+    height: auto;      /* Keeps the image proportional */
+    border: 5px solid white; /* This creates a 5-pixel thick, solid white border */
+    padding: 5px;      /* Optional: Adds space between the image and the border */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total size */
+    background-color: transparent; /* Good to include if your logo has transparent areas */
+}
+.logo-container { display: inline-block; /* Only takes up the width of its content */ background-color: white; padding: 10px;      /* Add some padding around the logo within the white background */ border-radius: 5px;   /* Optional: Add rounded corners to the white background */ }
+/* Services Section Styles (formerly Pricing Section) */
+#services-section {
+    background-color: #FFD700; /* Gold background for the entire section */
+    color: #FFFFFF; /* White text color for this section */
+    padding: 40px; /* Add space inside the section */
+    margin: 30px 0; /* Add space above and below the section */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    text-align: center; /* Center content within the section */
+}
+
+#services-section h2 {
+    color: #8B4513; /* Darker gold/brown for main heading */
+    margin-bottom: 20px;
+    font-size: 2.5em; /* Larger main heading */
+}
+
+#services-section p {
+    color: #FFFFFF; /* White text for paragraphs */
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.contact-prompt { /* Specific style for the contact prompt paragraph */
+    font-style: italic;
+    margin-top: 40px;
+    color: #EEE; /* Lighter white for subtle prompt */
+}
+
+
+/* Service Cards Container */
+.service-cards-container {
+    display: flex; /* Makes the cards display in a row */
+    flex-wrap: wrap; /* Allows cards to wrap to the next line on smaller screens */
+    justify-content: center; /* Centers the cards horizontally */
+    gap: 25px; /* Space between cards */
+    margin-top: 40px;
+}
+
+/* Individual Service Card Styles */
+.service-card {
+    background-color: #FFFFFF; /* White background for each card */
+    color: #333; /* Dark text for readability on white background */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow for cards */
+    padding: 25px;
+    width: 300px; /* Fixed width for cards (adjust as needed) */
+    text-align: left; /* Text inside card is left-aligned */
+    transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+    display: flex; /* Use flexbox for card content alignment */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Push button to bottom */
+}
+
+.service-card:hover {
+    transform: translateY(-5px); /* Lift card slightly on hover */
+}
+
+.service-card h3 {
+    color: #DAA520; /* Goldenrod color for card headings */
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.6em;
+}
+
+.service-card .price { /* Style for the price text */
+    color: #B8860B; /* DarkGoldenrod for price */
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.service-card ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.service-card ul li {
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.service-card ul li::before { /* Custom bullet point using a pseudo-element */
+    content: '✔️'; /* Checkmark symbol */
+    position: absolute;
+    left: 0;
+    color: #28a745; /* Green checkmark */
+}
+
+/* Add to Cart Button Styles */
+.add-to-cart-btn {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Changes mouse cursor to pointer on hover */
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* Pushes the button to the bottom of the flex container */
+}
+
+.add-to-cart-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+/* Shopping Cart Section Styles */
+#cart-section {
+    background-color: #f7f7f7; /* Light gray background */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 30px auto; /* Centers the section horizontally */
+    max-width: 800px; /* Limits its width */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center; /* Center content by default */
+}
+
+#cart-section h2 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+#cart-items {
+    min-height: 50px; /* Ensure space even when empty */
+    border: 1px dashed #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    text-align: left; /* List items should be left-aligned */
+}
+
+.cart-item { /* Style for individual items added to cart */
+    display: flex;
+    justify-content: space-between; /* Pushes name to left, price to right */
+    padding: 8px 0;
+    border-bottom: 1px dotted #eee;
+}
+
+.cart-item:last-child {
+    border-bottom: none; /* No border for the last item */
+}
+
+.cart-total {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff; /* Blue for total */
+    margin-top: 20px;
+}
+
+/* Checkout Options and Payment Methods */
+.checkout-options h3 {
+    color: #555;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between payment buttons */
+    margin-bottom: 25px;
+}
+
+.payment-btn, .confirm-payment-btn {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.payment-btn:hover, .confirm-payment-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Card Info Form Styles */
+#card-info-form {
+    background-color: #e9ecef; /* Lighter background for the form */
+    border-radius: 8px;
+    padding: 25px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+#card-info-form h4 {
+    color: #444;
+    margin-bottom: 20px;
+}
+
+#card-info-form input[type="text"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding/border in width calculation */
+}
+
+.confirm-payment-btn {
+    background-color: #28a745; /* Green for confirm payment */
+}
+
+.confirm-payment-btn:hover {
+    background-color: #218838;
+}
+/* Custom Cursor Styling for the entire website */
+body {
+    cursor:  auto; /* Adjust path as needed */
+}
+
+/* Optional: Keep the default hand pointer for clickable elements */
+a,
+button,
+input[type="submit"],
+input[type="button"],
+.clickable-element { /* Add any other classes for clickable items */
+    cursor: pointer;
+}
